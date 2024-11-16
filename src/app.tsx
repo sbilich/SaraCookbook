@@ -1,4 +1,5 @@
+import { Title } from "@mantine/core";
 
 export default function App() {
-  return (<>Hello World!</>)
+  return (<Title>Sara's Cookbook</Title>)
 }
