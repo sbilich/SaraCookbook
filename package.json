@@ -1,5 +1,9 @@
 {
+  "name": "sara-cookbook",
   "homepage": "https://sbilich.github.io/SaraCookbook",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "devDependencies": {
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
@@ -7,15 +11,16 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
-    "start": "react-scripts start"
+    "deploy": "gh-pages -d dist",
+    "dev": "vite",
+    "build": "vite build"
   },
   "dependencies": {
+    "@vitejs/plugin-react": "^4.3.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.0",
-    "react-scripts": "^5.0.1"
+    "vite": "^5.4.11"
   },
   "browserslist": {
     "production": [
