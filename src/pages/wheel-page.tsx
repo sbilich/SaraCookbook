@@ -4,6 +4,7 @@ import { Wheel } from 'react-custom-roulette';
 
 export const WheelPage = () => {
   const [isSpinning, setIsSpinning] = useState(false);
+  const [prizeNumber, setPrizeNumber] = useState(0);
 
   const data = [
     {
@@ -20,16 +21,24 @@ export const WheelPage = () => {
     },
   ];
 
+  const handleSpinClick = () => {
+    if (!isSpinning) {
+      const newPrizeNumber = Math.floor(Math.random() * data.length);
+      setPrizeNumber(newPrizeNumber);
+      setIsSpinning(true);
+    }
+  };
+
   return (
     <>
       <Wheel
         mustStartSpinning={isSpinning}
-        prizeNumber={0}
+        prizeNumber={prizeNumber}
         data={data}
         onStopSpinning={() => setIsSpinning(false)}
         backgroundColors={['#3e3e3e', '#df3428']}
       />
-      <Button onClick={() => setIsSpinning(true)}>Spin</Button>
+      <Button onClick={handleSpinClick}>Spin</Button>
     </>
   );
 };
