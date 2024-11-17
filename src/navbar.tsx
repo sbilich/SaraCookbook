@@ -13,6 +13,7 @@ const linkStyle = css({
   alignitems: 'center',
   gap: 5,
   textdecoration: 'none',
+  textDecorationLine: 'none',
   color: 'black',
   padding: 5,
   '&:hover': {
