@@ -16,8 +16,24 @@ export const WheelPage = () => {
       style: { backgroundColor: 'lightblue', textColor: 'black' },
     },
     {
+      option: 'Japanese',
+      style: { backgroundColor: 'FireBrick', textColor: 'black' },
+    },
+    {
+      option: 'Chinese',
+      style: { backgroundColor: 'Gainsboro', textColor: 'black' },
+    },
+    {
+      option: 'Mediterranean',
+      style: { backgroundColor: 'Coral', textColor: 'black' },
+    },
+    {
       option: 'Italian',
       style: { backgroundColor: 'crimson', textColor: 'black' },
+    },
+    {
+      option: 'Americana',
+      style: { backgroundColor: 'DodgerBlue', textColor: 'black' },
     },
   ];
 
