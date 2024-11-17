@@ -1,11 +1,12 @@
 import { MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
-import { RouterProvider, createRouter } from '@tanstack/react-router';
+import { createRouter, RouterProvider } from '@tanstack/react-router';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
 // Import the generated route tree
+import { emotionTransform, MantineEmotionProvider } from '@mantine/emotion';
 import { routeTree } from './routeTree.gen';
 
 // Create a new router instance
@@ -23,8 +24,10 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <MantineProvider>
-      <RouterProvider router={router} />
+    <MantineProvider stylesTransform={emotionTransform}>
+      <MantineEmotionProvider>
+        <RouterProvider router={router} />
+      </MantineEmotionProvider>
     </MantineProvider>
   </React.StrictMode>,
 );

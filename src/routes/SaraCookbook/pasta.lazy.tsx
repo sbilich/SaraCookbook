@@ -1,10 +1,9 @@
 import { createLazyFileRoute } from '@tanstack/react-router';
-import { WheelPage } from '../pages/wheel-page';
 
-export const Route = createLazyFileRoute('/wheel')({
+export const Route = createLazyFileRoute('/SaraCookbook/pasta')({
   component: RouteComponent,
 });
 
 function RouteComponent() {
-  return <WheelPage />;
+  return 'Hello /pasta!';
 }
