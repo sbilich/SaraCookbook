@@ -1,9 +1,9 @@
 {
-  "name": "Pad Thai",
+  "name": "Tikka Masala",
   "dateAdded": "2024-11-18T04:55:32.276Z",
   "description": "So easy, so flavorful. There's a reason I make it so much.",
-  "cuisine": ["Thai"],
-  "dish": ["Entree", "Pasta"],
+  "cuisine": ["Indian"],
+  "dish": ["Entree"],
   "baseServingSize": 4,
   "estimatedTime": 30,
   "instructions": [

@@ -5,6 +5,7 @@
   "cuisine": ["American"],
   "dish": ["Soup", "Entree"],
   "baseServingSize": 8,
+  "estimatedTime": 75,
   "instructions": [
     "In a large pot, melt the butter over medium-low heat. Add the onions and cook, stirring occasionally, until they are soft and translucent, about 20 minutes.",
     "Stir in the flour and cook for about 3 minutes, until the mixture thickens slightly and turns a pale golden color. Be careful not to let it brown.",

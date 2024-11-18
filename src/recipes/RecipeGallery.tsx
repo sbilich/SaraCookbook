@@ -21,6 +21,7 @@ export const RecipeGallery = ({
       <Title order={2}>{title}</Title>
 
       <ScrollArea>
+        {recipes.length === 0 && <div>Sorry no recipes yet!</div>}
         {recipes.map((recipe) => (
           <Card
             key={recipe.name}

@@ -17,6 +17,7 @@ const CuisineEnum = z.enum([
   'Japanese',
   'Mexican',
   'Thai',
+  'Indian',
 ]);
 export type CuisineType = z.infer<typeof CuisineEnum>;
 
@@ -54,6 +55,7 @@ export const Recipe = z.object({
   dateAdded: z.string().datetime(),
   description: z.string(),
   baseServingSize: z.number(),
+  estimatedTime: z.number(),
   dish: z.array(z.string()),
   cuisine: z.array(z.string()),
   instructions: z.array(z.string()),

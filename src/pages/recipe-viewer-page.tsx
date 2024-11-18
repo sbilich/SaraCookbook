@@ -9,7 +9,7 @@ import {
 } from '@mantine/core';
 import { RECIPES } from '../recipes/recipe-data/recipes';
 import { isIndividualRecipe, isNestedRecipe } from '../recipes/utils';
-import { pluralize } from '../utils/lang';
+import { minutesToTimeLabel, pluralize } from '../utils/lang';
 
 interface RecipeViewerPageProps {
   recipeName: string;
@@ -20,8 +20,14 @@ export const RecipeViewerPage = ({ recipeName }: RecipeViewerPageProps) => {
   if (!recipe) {
     return <div>Recipe not found</div>;
   }
-  const { ingredients, description, baseServingSize, cuisine, instructions } =
-    recipe;
+  const {
+    ingredients,
+    description,
+    baseServingSize,
+    cuisine,
+    instructions,
+    estimatedTime,
+  } = recipe;
 
   const ingredientRecipes = ingredients.filter((i) => isNestedRecipe(i));
   const individualIngredients = ingredients.filter((i) =>
@@ -35,6 +41,10 @@ export const RecipeViewerPage = ({ recipeName }: RecipeViewerPageProps) => {
         <Box sx={{ display: 'flex', gap: 10 }}>
           <Text>
             <b>Serving Size:</b> {baseServingSize}
+          </Text>
+          |
+          <Text>
+            <b>Estimated Time:</b> {minutesToTimeLabel(estimatedTime)}
           </Text>
           |
           {cuisine.map((d) => (
