@@ -20,7 +20,8 @@ function RouteComponent() {
   return (
     <>
       <Alert title="Welcome to my cookbook!">
-        Stay tuned for inspiring words
+        This site is a collection of my favorite recipes that I cook often for
+        my framily. I hope you enjoy them as much as I do!
       </Alert>
       <Title order={4} sx={{ paddingTop: 20 }}>
         Check out the newest recipes!
