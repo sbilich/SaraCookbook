@@ -1,4 +1,4 @@
-import { Card, ScrollArea } from '@mantine/core';
+import { Card, ScrollArea, Title } from '@mantine/core';
 import { useRouter } from '@tanstack/react-router';
 import { fetchRecipes } from './fetch-recipes';
 import { CuisineType, DishType } from './types';
@@ -18,7 +18,8 @@ export const RecipeGallery = ({
   const recipes = fetchRecipes(dishType, cuisineType);
   return (
     <div>
-      {title}
+      <Title order={2}>{title}</Title>
+
       <ScrollArea>
         {recipes.map((recipe) => (
           <Card
@@ -33,7 +34,12 @@ export const RecipeGallery = ({
             }
             shadow="sm"
             radius="md"
-            sx={{ '&:hover': { cursor: 'pointer' } }}
+            sx={{
+              '&:hover': { cursor: 'pointer' },
+              margin: 10,
+              border: '1px solid #ddd',
+              maxWidth: 200,
+            }}
           >
             {recipe.name}
           </Card>

@@ -1,0 +1,17 @@
+{
+  "name": "Crispy Tacos",
+  "description": "These tacos are juicy, crispy, and just plain delicious.",
+  "cuisine": ["Mexican"],
+  "dish": ["Entree"],
+  "baseServingSize": 8,
+  "instructions": [
+    "In a large pot, melt the butter over medium-low heat. Add the onions and cook, stirring occasionally, until they are soft and translucent, about 20 minutes."
+  ],
+  "ingredients": [
+    {
+      "name": "Butter",
+      "quantity": 0.5,
+      "unit": "lb"
+    }
+  ]
+}

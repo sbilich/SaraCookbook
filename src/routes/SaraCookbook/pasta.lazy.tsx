@@ -6,5 +6,5 @@ export const Route = createLazyFileRoute('/SaraCookbook/pasta')({
 });
 
 function RouteComponent() {
-  return <RecipeGallery title="Pastas" />;
+  return <RecipeGallery title="Pastas" dishType="Pasta" />;
 }

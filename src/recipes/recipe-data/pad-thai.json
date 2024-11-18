@@ -1,0 +1,114 @@
+{
+  "name": "Pad Thai",
+  "description": "So easy, so flavorful. There's a reason I make it so much.",
+  "cuisine": ["Thai"],
+  "dish": ["Entree", "Pasta"],
+  "baseServingSize": 4,
+  "instructions": [
+    "Cook the noodles according to the box. Rinse under cold water.",
+    "Make the sauce by combining all the ingredients in a bowl.",
+    "Heat the half of the oil (1.5 tablespoons) in a large pan over medium-high heat. Add the garlic and cook for 30 seconds. Add the chicken and vegetables and cook until just cooked through. When I use broccoli I usually steam the pan for a bit by adding ~1/4 cup of water and covering the pan til the water absorbs.",
+    "Push everything to one side of the pan. Add the remaining oil (1.5 tablespoons) to the other side of the pan. Crack the eggs into the oil and scramble them.",
+    "Turn off the heat and add the noodles, sauce, and peanuts and bean sprouts if using. Toss everything together.",
+    "Top with green onions, cilantro, more peanuts and lime wedges. Enjoy!"
+  ],
+  "ingredients": [
+    {
+      "name": "Pad thai noodles",
+      "quantity": 8,
+      "unit": "ounce"
+    },
+    {
+      "name": "Olive oil",
+      "quantity": 3,
+      "unit": "tablespoon"
+    },
+    {
+      "name": "garlic",
+      "quantity": 3,
+      "unit": "clove",
+      "preparation": "minced"
+    },
+    {
+      "name": "Chicken",
+      "quantity": 8,
+      "unit": "ounce",
+      "preparation": "cut into bite-sized pieces"
+    },
+    {
+      "name": "Egg",
+      "quantity": 2,
+      "unit": "egg"
+    },
+    {
+      "name": "Lime",
+      "quantity": 2,
+      "unit": "lime"
+    },
+    {
+      "name": "Vegetables",
+      "quantity": 1,
+      "unit": "serving",
+      "notes": "Chop up/prepare whichever vegetables you like. Here's some suggestions: red bell pepper, broccoli, bok choy, carrots."
+    },
+    {
+      "name": "Bean sprouts",
+      "quantity": 1,
+      "unit": "cup",
+      "isOptional": true
+    },
+    {
+      "name": "Green onion",
+      "quantity": 3,
+      "unit": "green onion",
+      "preparation": "chopped"
+    },
+    {
+      "name": "Cilantro",
+      "quantity": 0.5,
+      "unit": "cup",
+      "preparation": "chopped"
+    },
+    {
+      "name": "Peanuts",
+      "quantity": 0.5,
+      "unit": "cup"
+    },
+    {
+      "name": "Pad Thai sauce",
+      "ingredients": [
+        {
+          "name": "Fish sauce",
+          "quantity": 3,
+          "unit": "tablespoon"
+        },
+        {
+          "name": "Soy sauce",
+          "quantity": 1,
+          "unit": "tablespoon"
+        },
+        {
+          "name": "Light brown sugar",
+          "quantity": 5,
+          "unit": "tablespoon"
+        },
+        {
+          "name": "Rice vinegar",
+          "quantity": 2,
+          "unit": "tablespoon",
+          "notes": "or tamarind paste"
+        },
+        {
+          "name": "Sriracha",
+          "quantity": 1,
+          "unit": "tablespoon"
+        },
+        {
+          "name": "Peanut butter",
+          "quantity": 2,
+          "unit": "tablespoon"
+        }
+      ]
+    }
+  ]
+}
