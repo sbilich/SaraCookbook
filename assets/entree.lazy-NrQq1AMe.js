@@ -1,1 +1,0 @@
-import{l as e,j as o}from"./index-Dpi0XRwc.js";import{R as t}from"./RecipeGallery-sbzaW_-Z.js";import"./recipes-OeMa6m-Z.js";const s=e("/SaraCookbook/entree")({component:r});function r(){return o.jsx(t,{title:"Entrees",dishType:"Entree"})}export{s as Route};

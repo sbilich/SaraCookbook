@@ -1,1 +1,0 @@
-import{l as o,j as t}from"./index-Dpi0XRwc.js";import{R as e}from"./RecipeGallery-sbzaW_-Z.js";import"./recipes-OeMa6m-Z.js";const i=o("/SaraCookbook/pasta")({component:a});function a(){return t.jsx(e,{title:"Pastas",dishType:"Pasta"})}export{i as Route};
