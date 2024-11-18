@@ -1,1 +1,0 @@
-import{l as o,j as t}from"./index-0uyzOAwk.js";import{R as e}from"./RecipeGallery-C2IqtayW.js";import"./tomato-soup-D62I_MkO.js";const s=o("/SaraCookbook/sandwich")({component:r});function r(){return t.jsx(e,{title:"Sandwiches"})}export{s as Route};
