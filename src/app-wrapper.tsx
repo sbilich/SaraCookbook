@@ -6,6 +6,12 @@ import { Navbar } from './navbar';
 export const AppWrapper = ({ children }: { children: React.ReactNode }) => {
   const [opened, { toggle }] = useDisclosure();
 
+  const onNavigate = () => {
+    if (opened) {
+      toggle();
+    }
+  };
+
   return (
     <AppShell
       header={{ height: 60 }}
@@ -30,7 +36,7 @@ export const AppWrapper = ({ children }: { children: React.ReactNode }) => {
       </AppShell.Header>
 
       <AppShell.Navbar style={{ padding: 10 }}>
-        <Navbar />
+        <Navbar onNavigate={onNavigate} />
       </AppShell.Navbar>
 
       <AppShell.Main>{children}</AppShell.Main>

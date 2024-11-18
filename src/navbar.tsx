@@ -21,13 +21,14 @@ const linkStyle = css({
   },
 });
 
-export const Navbar = () => {
+export const Navbar = ({ onNavigate }: { onNavigate: () => void }) => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
       <Link
         to="/SaraCookbook"
         activeOptions={{ exact: true }}
         className={linkStyle}
+        onClick={onNavigate}
       >
         <FaHome size="1.5rem" /> Home
       </Link>
@@ -35,6 +36,7 @@ export const Navbar = () => {
         to="/SaraCookbook/sandwich"
         activeOptions={{ exact: true }}
         className={linkStyle}
+        onClick={onNavigate}
       >
         <PiBreadBold size="1.5rem" /> Sandwiches
       </Link>
@@ -42,6 +44,7 @@ export const Navbar = () => {
         to="/SaraCookbook/soup"
         activeOptions={{ exact: true }}
         className={linkStyle}
+        onClick={onNavigate}
       >
         <TbSoup size="1.5rem" /> Soup
       </Link>
@@ -49,6 +52,7 @@ export const Navbar = () => {
         to="/SaraCookbook/entree"
         activeOptions={{ exact: true }}
         className={linkStyle}
+        onClick={onNavigate}
       >
         <MdOutlineDinnerDining size="1.5rem" /> Entrees
       </Link>
@@ -56,6 +60,7 @@ export const Navbar = () => {
         to="/SaraCookbook/pasta"
         activeOptions={{ exact: true }}
         className={linkStyle}
+        onClick={onNavigate}
       >
         <GiNoodles size="1.5rem" /> Pasta/Noodles
       </Link>
@@ -63,6 +68,7 @@ export const Navbar = () => {
         to="/SaraCookbook/dessert"
         activeOptions={{ exact: true }}
         className={linkStyle}
+        onClick={onNavigate}
       >
         <TbCake size="1.5rem" /> Dessert
       </Link>
@@ -70,6 +76,7 @@ export const Navbar = () => {
         to="/SaraCookbook/drinks"
         activeOptions={{ exact: true }}
         className={linkStyle}
+        onClick={onNavigate}
       >
         <LiaCocktailSolid size="1.5rem" /> Drinks
       </Link>
@@ -77,6 +84,7 @@ export const Navbar = () => {
         to="/SaraCookbook/cuisine"
         activeOptions={{ exact: true }}
         className={linkStyle}
+        onClick={onNavigate}
       >
         <BiFoodMenu size="1.5rem" /> By Cuisine
       </Link>
@@ -84,6 +92,7 @@ export const Navbar = () => {
         to="/SaraCookbook/wheel"
         activeOptions={{ exact: true }}
         className={linkStyle}
+        onClick={onNavigate}
       >
         <GiCartwheel size="1.5rem" /> The Wheel
       </Link>
