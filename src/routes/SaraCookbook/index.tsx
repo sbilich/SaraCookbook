@@ -16,6 +16,7 @@ function RouteComponent() {
       DateTime.fromISO(recipe.dateAdded) <= DateTime.now() ||
       DateTime.fromISO(recipe.dateAdded) >= DateTime.now().minus({ days: 7 }),
   ).slice(0, 5);
+
   return (
     <>
       <Alert title="Welcome to my cookbook!">
