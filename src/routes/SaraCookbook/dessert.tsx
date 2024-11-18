@@ -1,7 +1,7 @@
-import { createLazyFileRoute } from '@tanstack/react-router';
+import { createFileRoute } from '@tanstack/react-router';
 import { RecipeGallery } from '../../recipes/RecipeGallery';
 
-export const Route = createLazyFileRoute('/SaraCookbook/dessert')({
+export const Route = createFileRoute('/SaraCookbook/dessert')({
   component: RouteComponent,
 });
 

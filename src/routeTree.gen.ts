@@ -8,28 +8,19 @@
 // You should NOT make any changes in this file as it will be overwritten.
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
-import { createFileRoute } from '@tanstack/react-router'
-
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
 import { Route as SaraCookbookIndexImport } from './routes/SaraCookbook/index'
-
-// Create Virtual Routes
-
-const SaraCookbookWheelLazyImport = createFileRoute('/SaraCookbook/wheel')()
-const SaraCookbookSoupLazyImport = createFileRoute('/SaraCookbook/soup')()
-const SaraCookbookSandwichLazyImport = createFileRoute(
-  '/SaraCookbook/sandwich',
-)()
-const SaraCookbookPastaLazyImport = createFileRoute('/SaraCookbook/pasta')()
-const SaraCookbookEntreeLazyImport = createFileRoute('/SaraCookbook/entree')()
-const SaraCookbookDrinksLazyImport = createFileRoute('/SaraCookbook/drinks')()
-const SaraCookbookDessertLazyImport = createFileRoute('/SaraCookbook/dessert')()
-const SaraCookbookCuisineLazyImport = createFileRoute('/SaraCookbook/cuisine')()
-const SaraCookbookRecipeViewerRecipeNameLazyImport = createFileRoute(
-  '/SaraCookbook/recipe-viewer/$recipeName',
-)()
+import { Route as SaraCookbookWheelImport } from './routes/SaraCookbook/wheel'
+import { Route as SaraCookbookSoupImport } from './routes/SaraCookbook/soup'
+import { Route as SaraCookbookSandwichImport } from './routes/SaraCookbook/sandwich'
+import { Route as SaraCookbookPastaImport } from './routes/SaraCookbook/pasta'
+import { Route as SaraCookbookEntreeImport } from './routes/SaraCookbook/entree'
+import { Route as SaraCookbookDrinksImport } from './routes/SaraCookbook/drinks'
+import { Route as SaraCookbookDessertImport } from './routes/SaraCookbook/dessert'
+import { Route as SaraCookbookCuisineImport } from './routes/SaraCookbook/cuisine'
+import { Route as SaraCookbookRecipeViewerRecipeNameImport } from './routes/SaraCookbook/recipe-viewer.$recipeName'
 
 // Create/Update Routes
 
@@ -39,80 +30,60 @@ const SaraCookbookIndexRoute = SaraCookbookIndexImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
-const SaraCookbookWheelLazyRoute = SaraCookbookWheelLazyImport.update({
+const SaraCookbookWheelRoute = SaraCookbookWheelImport.update({
   id: '/SaraCookbook/wheel',
   path: '/SaraCookbook/wheel',
   getParentRoute: () => rootRoute,
-} as any).lazy(() =>
-  import('./routes/SaraCookbook/wheel.lazy').then((d) => d.Route),
-)
+} as any)
 
-const SaraCookbookSoupLazyRoute = SaraCookbookSoupLazyImport.update({
+const SaraCookbookSoupRoute = SaraCookbookSoupImport.update({
   id: '/SaraCookbook/soup',
   path: '/SaraCookbook/soup',
   getParentRoute: () => rootRoute,
-} as any).lazy(() =>
-  import('./routes/SaraCookbook/soup.lazy').then((d) => d.Route),
-)
+} as any)
 
-const SaraCookbookSandwichLazyRoute = SaraCookbookSandwichLazyImport.update({
+const SaraCookbookSandwichRoute = SaraCookbookSandwichImport.update({
   id: '/SaraCookbook/sandwich',
   path: '/SaraCookbook/sandwich',
   getParentRoute: () => rootRoute,
-} as any).lazy(() =>
-  import('./routes/SaraCookbook/sandwich.lazy').then((d) => d.Route),
-)
+} as any)
 
-const SaraCookbookPastaLazyRoute = SaraCookbookPastaLazyImport.update({
+const SaraCookbookPastaRoute = SaraCookbookPastaImport.update({
   id: '/SaraCookbook/pasta',
   path: '/SaraCookbook/pasta',
   getParentRoute: () => rootRoute,
-} as any).lazy(() =>
-  import('./routes/SaraCookbook/pasta.lazy').then((d) => d.Route),
-)
+} as any)
 
-const SaraCookbookEntreeLazyRoute = SaraCookbookEntreeLazyImport.update({
+const SaraCookbookEntreeRoute = SaraCookbookEntreeImport.update({
   id: '/SaraCookbook/entree',
   path: '/SaraCookbook/entree',
   getParentRoute: () => rootRoute,
-} as any).lazy(() =>
-  import('./routes/SaraCookbook/entree.lazy').then((d) => d.Route),
-)
+} as any)
 
-const SaraCookbookDrinksLazyRoute = SaraCookbookDrinksLazyImport.update({
+const SaraCookbookDrinksRoute = SaraCookbookDrinksImport.update({
   id: '/SaraCookbook/drinks',
   path: '/SaraCookbook/drinks',
   getParentRoute: () => rootRoute,
-} as any).lazy(() =>
-  import('./routes/SaraCookbook/drinks.lazy').then((d) => d.Route),
-)
+} as any)
 
-const SaraCookbookDessertLazyRoute = SaraCookbookDessertLazyImport.update({
+const SaraCookbookDessertRoute = SaraCookbookDessertImport.update({
   id: '/SaraCookbook/dessert',
   path: '/SaraCookbook/dessert',
   getParentRoute: () => rootRoute,
-} as any).lazy(() =>
-  import('./routes/SaraCookbook/dessert.lazy').then((d) => d.Route),
-)
+} as any)
 
-const SaraCookbookCuisineLazyRoute = SaraCookbookCuisineLazyImport.update({
+const SaraCookbookCuisineRoute = SaraCookbookCuisineImport.update({
   id: '/SaraCookbook/cuisine',
   path: '/SaraCookbook/cuisine',
   getParentRoute: () => rootRoute,
-} as any).lazy(() =>
-  import('./routes/SaraCookbook/cuisine.lazy').then((d) => d.Route),
-)
+} as any)
 
-const SaraCookbookRecipeViewerRecipeNameLazyRoute =
-  SaraCookbookRecipeViewerRecipeNameLazyImport.update({
+const SaraCookbookRecipeViewerRecipeNameRoute =
+  SaraCookbookRecipeViewerRecipeNameImport.update({
     id: '/SaraCookbook/recipe-viewer/$recipeName',
     path: '/SaraCookbook/recipe-viewer/$recipeName',
     getParentRoute: () => rootRoute,
-  } as any).lazy(() =>
-    import('./routes/SaraCookbook/recipe-viewer.$recipeName.lazy').then(
-      (d) => d.Route,
-    ),
-  )
+  } as any)
 
 // Populate the FileRoutesByPath interface
 
@@ -122,56 +93,56 @@ declare module '@tanstack/react-router' {
       id: '/SaraCookbook/cuisine'
       path: '/SaraCookbook/cuisine'
       fullPath: '/SaraCookbook/cuisine'
-      preLoaderRoute: typeof SaraCookbookCuisineLazyImport
+      preLoaderRoute: typeof SaraCookbookCuisineImport
       parentRoute: typeof rootRoute
     }
     '/SaraCookbook/dessert': {
       id: '/SaraCookbook/dessert'
       path: '/SaraCookbook/dessert'
       fullPath: '/SaraCookbook/dessert'
-      preLoaderRoute: typeof SaraCookbookDessertLazyImport
+      preLoaderRoute: typeof SaraCookbookDessertImport
       parentRoute: typeof rootRoute
     }
     '/SaraCookbook/drinks': {
       id: '/SaraCookbook/drinks'
       path: '/SaraCookbook/drinks'
       fullPath: '/SaraCookbook/drinks'
-      preLoaderRoute: typeof SaraCookbookDrinksLazyImport
+      preLoaderRoute: typeof SaraCookbookDrinksImport
       parentRoute: typeof rootRoute
     }
     '/SaraCookbook/entree': {
       id: '/SaraCookbook/entree'
       path: '/SaraCookbook/entree'
       fullPath: '/SaraCookbook/entree'
-      preLoaderRoute: typeof SaraCookbookEntreeLazyImport
+      preLoaderRoute: typeof SaraCookbookEntreeImport
       parentRoute: typeof rootRoute
     }
     '/SaraCookbook/pasta': {
       id: '/SaraCookbook/pasta'
       path: '/SaraCookbook/pasta'
       fullPath: '/SaraCookbook/pasta'
-      preLoaderRoute: typeof SaraCookbookPastaLazyImport
+      preLoaderRoute: typeof SaraCookbookPastaImport
       parentRoute: typeof rootRoute
     }
     '/SaraCookbook/sandwich': {
       id: '/SaraCookbook/sandwich'
       path: '/SaraCookbook/sandwich'
       fullPath: '/SaraCookbook/sandwich'
-      preLoaderRoute: typeof SaraCookbookSandwichLazyImport
+      preLoaderRoute: typeof SaraCookbookSandwichImport
       parentRoute: typeof rootRoute
     }
     '/SaraCookbook/soup': {
       id: '/SaraCookbook/soup'
       path: '/SaraCookbook/soup'
       fullPath: '/SaraCookbook/soup'
-      preLoaderRoute: typeof SaraCookbookSoupLazyImport
+      preLoaderRoute: typeof SaraCookbookSoupImport
       parentRoute: typeof rootRoute
     }
     '/SaraCookbook/wheel': {
       id: '/SaraCookbook/wheel'
       path: '/SaraCookbook/wheel'
       fullPath: '/SaraCookbook/wheel'
-      preLoaderRoute: typeof SaraCookbookWheelLazyImport
+      preLoaderRoute: typeof SaraCookbookWheelImport
       parentRoute: typeof rootRoute
     }
     '/SaraCookbook/': {
@@ -185,7 +156,7 @@ declare module '@tanstack/react-router' {
       id: '/SaraCookbook/recipe-viewer/$recipeName'
       path: '/SaraCookbook/recipe-viewer/$recipeName'
       fullPath: '/SaraCookbook/recipe-viewer/$recipeName'
-      preLoaderRoute: typeof SaraCookbookRecipeViewerRecipeNameLazyImport
+      preLoaderRoute: typeof SaraCookbookRecipeViewerRecipeNameImport
       parentRoute: typeof rootRoute
     }
   }
@@ -194,43 +165,43 @@ declare module '@tanstack/react-router' {
 // Create and export the route tree
 
 export interface FileRoutesByFullPath {
-  '/SaraCookbook/cuisine': typeof SaraCookbookCuisineLazyRoute
-  '/SaraCookbook/dessert': typeof SaraCookbookDessertLazyRoute
-  '/SaraCookbook/drinks': typeof SaraCookbookDrinksLazyRoute
-  '/SaraCookbook/entree': typeof SaraCookbookEntreeLazyRoute
-  '/SaraCookbook/pasta': typeof SaraCookbookPastaLazyRoute
-  '/SaraCookbook/sandwich': typeof SaraCookbookSandwichLazyRoute
-  '/SaraCookbook/soup': typeof SaraCookbookSoupLazyRoute
-  '/SaraCookbook/wheel': typeof SaraCookbookWheelLazyRoute
+  '/SaraCookbook/cuisine': typeof SaraCookbookCuisineRoute
+  '/SaraCookbook/dessert': typeof SaraCookbookDessertRoute
+  '/SaraCookbook/drinks': typeof SaraCookbookDrinksRoute
+  '/SaraCookbook/entree': typeof SaraCookbookEntreeRoute
+  '/SaraCookbook/pasta': typeof SaraCookbookPastaRoute
+  '/SaraCookbook/sandwich': typeof SaraCookbookSandwichRoute
+  '/SaraCookbook/soup': typeof SaraCookbookSoupRoute
+  '/SaraCookbook/wheel': typeof SaraCookbookWheelRoute
   '/SaraCookbook': typeof SaraCookbookIndexRoute
-  '/SaraCookbook/recipe-viewer/$recipeName': typeof SaraCookbookRecipeViewerRecipeNameLazyRoute
+  '/SaraCookbook/recipe-viewer/$recipeName': typeof SaraCookbookRecipeViewerRecipeNameRoute
 }
 
 export interface FileRoutesByTo {
-  '/SaraCookbook/cuisine': typeof SaraCookbookCuisineLazyRoute
-  '/SaraCookbook/dessert': typeof SaraCookbookDessertLazyRoute
-  '/SaraCookbook/drinks': typeof SaraCookbookDrinksLazyRoute
-  '/SaraCookbook/entree': typeof SaraCookbookEntreeLazyRoute
-  '/SaraCookbook/pasta': typeof SaraCookbookPastaLazyRoute
-  '/SaraCookbook/sandwich': typeof SaraCookbookSandwichLazyRoute
-  '/SaraCookbook/soup': typeof SaraCookbookSoupLazyRoute
-  '/SaraCookbook/wheel': typeof SaraCookbookWheelLazyRoute
+  '/SaraCookbook/cuisine': typeof SaraCookbookCuisineRoute
+  '/SaraCookbook/dessert': typeof SaraCookbookDessertRoute
+  '/SaraCookbook/drinks': typeof SaraCookbookDrinksRoute
+  '/SaraCookbook/entree': typeof SaraCookbookEntreeRoute
+  '/SaraCookbook/pasta': typeof SaraCookbookPastaRoute
+  '/SaraCookbook/sandwich': typeof SaraCookbookSandwichRoute
+  '/SaraCookbook/soup': typeof SaraCookbookSoupRoute
+  '/SaraCookbook/wheel': typeof SaraCookbookWheelRoute
   '/SaraCookbook': typeof SaraCookbookIndexRoute
-  '/SaraCookbook/recipe-viewer/$recipeName': typeof SaraCookbookRecipeViewerRecipeNameLazyRoute
+  '/SaraCookbook/recipe-viewer/$recipeName': typeof SaraCookbookRecipeViewerRecipeNameRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
-  '/SaraCookbook/cuisine': typeof SaraCookbookCuisineLazyRoute
-  '/SaraCookbook/dessert': typeof SaraCookbookDessertLazyRoute
-  '/SaraCookbook/drinks': typeof SaraCookbookDrinksLazyRoute
-  '/SaraCookbook/entree': typeof SaraCookbookEntreeLazyRoute
-  '/SaraCookbook/pasta': typeof SaraCookbookPastaLazyRoute
-  '/SaraCookbook/sandwich': typeof SaraCookbookSandwichLazyRoute
-  '/SaraCookbook/soup': typeof SaraCookbookSoupLazyRoute
-  '/SaraCookbook/wheel': typeof SaraCookbookWheelLazyRoute
+  '/SaraCookbook/cuisine': typeof SaraCookbookCuisineRoute
+  '/SaraCookbook/dessert': typeof SaraCookbookDessertRoute
+  '/SaraCookbook/drinks': typeof SaraCookbookDrinksRoute
+  '/SaraCookbook/entree': typeof SaraCookbookEntreeRoute
+  '/SaraCookbook/pasta': typeof SaraCookbookPastaRoute
+  '/SaraCookbook/sandwich': typeof SaraCookbookSandwichRoute
+  '/SaraCookbook/soup': typeof SaraCookbookSoupRoute
+  '/SaraCookbook/wheel': typeof SaraCookbookWheelRoute
   '/SaraCookbook/': typeof SaraCookbookIndexRoute
-  '/SaraCookbook/recipe-viewer/$recipeName': typeof SaraCookbookRecipeViewerRecipeNameLazyRoute
+  '/SaraCookbook/recipe-viewer/$recipeName': typeof SaraCookbookRecipeViewerRecipeNameRoute
 }
 
 export interface FileRouteTypes {
@@ -274,30 +245,30 @@ export interface FileRouteTypes {
 }
 
 export interface RootRouteChildren {
-  SaraCookbookCuisineLazyRoute: typeof SaraCookbookCuisineLazyRoute
-  SaraCookbookDessertLazyRoute: typeof SaraCookbookDessertLazyRoute
-  SaraCookbookDrinksLazyRoute: typeof SaraCookbookDrinksLazyRoute
-  SaraCookbookEntreeLazyRoute: typeof SaraCookbookEntreeLazyRoute
-  SaraCookbookPastaLazyRoute: typeof SaraCookbookPastaLazyRoute
-  SaraCookbookSandwichLazyRoute: typeof SaraCookbookSandwichLazyRoute
-  SaraCookbookSoupLazyRoute: typeof SaraCookbookSoupLazyRoute
-  SaraCookbookWheelLazyRoute: typeof SaraCookbookWheelLazyRoute
+  SaraCookbookCuisineRoute: typeof SaraCookbookCuisineRoute
+  SaraCookbookDessertRoute: typeof SaraCookbookDessertRoute
+  SaraCookbookDrinksRoute: typeof SaraCookbookDrinksRoute
+  SaraCookbookEntreeRoute: typeof SaraCookbookEntreeRoute
+  SaraCookbookPastaRoute: typeof SaraCookbookPastaRoute
+  SaraCookbookSandwichRoute: typeof SaraCookbookSandwichRoute
+  SaraCookbookSoupRoute: typeof SaraCookbookSoupRoute
+  SaraCookbookWheelRoute: typeof SaraCookbookWheelRoute
   SaraCookbookIndexRoute: typeof SaraCookbookIndexRoute
-  SaraCookbookRecipeViewerRecipeNameLazyRoute: typeof SaraCookbookRecipeViewerRecipeNameLazyRoute
+  SaraCookbookRecipeViewerRecipeNameRoute: typeof SaraCookbookRecipeViewerRecipeNameRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
-  SaraCookbookCuisineLazyRoute: SaraCookbookCuisineLazyRoute,
-  SaraCookbookDessertLazyRoute: SaraCookbookDessertLazyRoute,
-  SaraCookbookDrinksLazyRoute: SaraCookbookDrinksLazyRoute,
-  SaraCookbookEntreeLazyRoute: SaraCookbookEntreeLazyRoute,
-  SaraCookbookPastaLazyRoute: SaraCookbookPastaLazyRoute,
-  SaraCookbookSandwichLazyRoute: SaraCookbookSandwichLazyRoute,
-  SaraCookbookSoupLazyRoute: SaraCookbookSoupLazyRoute,
-  SaraCookbookWheelLazyRoute: SaraCookbookWheelLazyRoute,
+  SaraCookbookCuisineRoute: SaraCookbookCuisineRoute,
+  SaraCookbookDessertRoute: SaraCookbookDessertRoute,
+  SaraCookbookDrinksRoute: SaraCookbookDrinksRoute,
+  SaraCookbookEntreeRoute: SaraCookbookEntreeRoute,
+  SaraCookbookPastaRoute: SaraCookbookPastaRoute,
+  SaraCookbookSandwichRoute: SaraCookbookSandwichRoute,
+  SaraCookbookSoupRoute: SaraCookbookSoupRoute,
+  SaraCookbookWheelRoute: SaraCookbookWheelRoute,
   SaraCookbookIndexRoute: SaraCookbookIndexRoute,
-  SaraCookbookRecipeViewerRecipeNameLazyRoute:
-    SaraCookbookRecipeViewerRecipeNameLazyRoute,
+  SaraCookbookRecipeViewerRecipeNameRoute:
+    SaraCookbookRecipeViewerRecipeNameRoute,
 }
 
 export const routeTree = rootRoute
@@ -323,34 +294,34 @@ export const routeTree = rootRoute
       ]
     },
     "/SaraCookbook/cuisine": {
-      "filePath": "SaraCookbook/cuisine.lazy.tsx"
+      "filePath": "SaraCookbook/cuisine.tsx"
     },
     "/SaraCookbook/dessert": {
-      "filePath": "SaraCookbook/dessert.lazy.tsx"
+      "filePath": "SaraCookbook/dessert.tsx"
     },
     "/SaraCookbook/drinks": {
-      "filePath": "SaraCookbook/drinks.lazy.tsx"
+      "filePath": "SaraCookbook/drinks.tsx"
     },
     "/SaraCookbook/entree": {
-      "filePath": "SaraCookbook/entree.lazy.tsx"
+      "filePath": "SaraCookbook/entree.tsx"
     },
     "/SaraCookbook/pasta": {
-      "filePath": "SaraCookbook/pasta.lazy.tsx"
+      "filePath": "SaraCookbook/pasta.tsx"
     },
     "/SaraCookbook/sandwich": {
-      "filePath": "SaraCookbook/sandwich.lazy.tsx"
+      "filePath": "SaraCookbook/sandwich.tsx"
     },
     "/SaraCookbook/soup": {
-      "filePath": "SaraCookbook/soup.lazy.tsx"
+      "filePath": "SaraCookbook/soup.tsx"
     },
     "/SaraCookbook/wheel": {
-      "filePath": "SaraCookbook/wheel.lazy.tsx"
+      "filePath": "SaraCookbook/wheel.tsx"
     },
     "/SaraCookbook/": {
       "filePath": "SaraCookbook/index.tsx"
     },
     "/SaraCookbook/recipe-viewer/$recipeName": {
-      "filePath": "SaraCookbook/recipe-viewer.$recipeName.lazy.tsx"
+      "filePath": "SaraCookbook/recipe-viewer.$recipeName.tsx"
     }
   }
 }
