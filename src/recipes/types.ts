@@ -1,4 +1,4 @@
-import { z } from 'zod';
+import { date, z } from 'zod';
 
 const DishEnum = z.enum([
   'Entree',
@@ -51,6 +51,7 @@ export type NestedRecipeType = z.infer<typeof NestedRecipe>;
 
 export const Recipe = z.object({
   name: z.string(),
+  dateAdded: z.string().datetime(),
   description: z.string(),
   baseServingSize: z.number(),
   dish: z.array(z.string()),
