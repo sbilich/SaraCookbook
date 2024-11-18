@@ -1,1 +1,0 @@
-import{l as o,j as t}from"./index-DHLqRRCv.js";import{R as e}from"./RecipeGallery-LtH3_5Dy.js";import"./tomato-soup-D62I_MkO.js";const a=o("/SaraCookbook/drinks")({component:r});function r(){return t.jsx(e,{title:"Drinks"})}export{a as Route};
