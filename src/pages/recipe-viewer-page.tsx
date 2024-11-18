@@ -80,6 +80,9 @@ export const RecipeViewerPage = ({ recipeName }: RecipeViewerPageProps) => {
         </Box>
         {ingredientRecipes.map((ingredientRecipe) => (
           <>
+            <Title order={4} sx={{ paddingTop: 20, paddingBottom: 10 }}>
+              {ingredientRecipe.name}
+            </Title>
             <Box
               sx={{
                 display: 'grid',
