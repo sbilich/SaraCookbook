@@ -35,6 +35,7 @@ export type IngredientType = z.infer<typeof Ingredient>;
 
 const NestedRecipe = z.object({
   name: z.string(),
+  description: z.string().optional(),
   ingredients: z.array(
     z.object({
       name: z.string(),

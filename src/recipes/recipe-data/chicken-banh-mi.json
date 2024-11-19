@@ -1,0 +1,128 @@
+{
+  "name": "Chicken Banh Mi",
+  "dateAdded": "2024-11-19T04:55:32.276Z",
+  "description": "These sandwiches are a Vietnamese staple and one of my favorite street eats when I traveled through Vietnam. Here's a simplified version that you can make at home.",
+  "cuisine": ["Vietnamese"],
+  "dish": ["Entree", "Sandwich"],
+  "baseServingSize": 4,
+  "estimatedTime": 75,
+  "instructions": [
+    "Start by pickling the veggies. Put the chopped up veg in a large mason large. In a separate bowl combine the water, rice vinegar, sugar and salt - stir until the sugar dissolves. Pour the liquid over the veg and screw the lid onto the jar. Allow the veg to pickle in the fridge for at least an hour and up to 24 hours before using.",
+    "In a medium bowl mix the fish sauce, garlic, soy sauce, sugar, lime zest, mayo and sriracha. Add the chicken and coat the chicken in the marinade. Allow the chicken to marinate for at least 20 minutes and up to 24 hours.",
+    "Cook the chicken through on a grill or in a pan. Once cooked, allow the chicken to rest for a few minutes before slicing it into thin strips. Strip size depends on your preference.",
+    "Toast the baguettes and then spread on mayo and more sriracha if you want more spice. Top with the chicken, pickled veg, cilantro and jalapeño slices. Enjoy!"
+  ],
+  "ingredients": [
+    {
+      "name": "Pickled Vegetables",
+      "description": "Traditionally carrot, daikon radish, and cucumber are used. I don't like radish so I usually add more carrot and cucumber. Feel free to experiment!",
+      "ingredients": [
+        {
+          "name": "Carrot",
+          "quantity": 6,
+          "unit": "ounce",
+          "notes": "peeled and then julienned",
+          "optional": true
+        },
+        {
+          "name": "Daikon radish",
+          "quantity": 6,
+          "unit": "ounce",
+          "notes": "peeled and then julienned",
+          "optional": true
+        },
+        {
+          "name": "Persian Cucumber",
+          "quantity": 2,
+          "unit": "cucumber",
+          "notes": "peeled and then julienned",
+          "optional": true
+        },
+        {
+          "name": "Water",
+          "quantity": 0.5,
+          "unit": "cup"
+        },
+        {
+          "name": "White sugar",
+          "quantity": 0.5,
+          "unit": "cup"
+        },
+        {
+          "name": "Rice vinegar",
+          "quantity": 0.5,
+          "unit": "cup",
+          "notes": "or apple cider vinegar"
+        },
+        {
+          "name": "Salt",
+          "quantity": 2,
+          "unit": "teaspoon"
+        }
+      ]
+    },
+    {
+      "name": "Boneless chicken",
+      "quantity": 1,
+      "unit": "lb"
+    },
+    {
+      "name": "Garlic",
+      "quantity": 3,
+      "unit": "large cloves",
+      "preparation": "minced"
+    },
+    {
+      "name": "Fish sauce",
+      "quantity": 2,
+      "unit": "tablespoon"
+    },
+    {
+      "name": "Soy sauce",
+      "quantity": 2,
+      "unit": "tablespoon"
+    },
+    {
+      "name": "White sugar",
+      "quantity": 1,
+      "unit": "tablespoon"
+    },
+    {
+      "name": "Mayonnaise",
+      "quantity": 1,
+      "unit": "tablespoon",
+      "notes": "have more for spreading on the bread"
+    },
+    {
+      "name": "Lime Zest",
+      "quantity": 0.5,
+      "unit": "teaspoon"
+    },
+    {
+      "name": "Sriracha",
+      "quantity": 1,
+      "unit": "teaspoon",
+      "notes": "or more if you like it spicy"
+    },
+    {
+      "name": "Baguette",
+      "quantity": 2,
+      "unit": "baguette",
+      "notes": "Depending on the size of the baguette you may need more or less. I aim to get 4 - 6 inch sandwiches."
+    },
+    {
+      "name": "Jalapeño",
+      "quantity": 1,
+      "unit": "jalapeno",
+      "preparation": "sliced",
+      "optional": true
+    },
+    {
+      "name": "Cilantro",
+      "quantity": 1,
+      "unit": "bunch",
+      "optional": true,
+      "notes": "I use the whole cilantro (stem + leaf) for more crunch!"
+    }
+  ]
+}

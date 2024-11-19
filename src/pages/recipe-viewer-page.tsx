@@ -83,6 +83,11 @@ export const RecipeViewerPage = ({ recipeName }: RecipeViewerPageProps) => {
             <Title order={4} sx={{ paddingTop: 20, paddingBottom: 10 }}>
               {ingredientRecipe.name}
             </Title>
+            {ingredientRecipe.description && (
+              <Text sx={{ paddingBottom: 10 }}>
+                {ingredientRecipe.description}
+              </Text>
+            )}
             <Box
               sx={{
                 display: 'grid',
