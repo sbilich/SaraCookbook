@@ -1,0 +1,82 @@
+{
+  "name": "Lemon Zucchini Pasta",
+  "dateAdded": "2024-11-19T04:55:32.276Z",
+  "description": "A creamy, bright pasta dish that is my pre-race dinner ritual.",
+  "cuisine": ["Italian"],
+  "dish": ["Entree", "Pasta"],
+  "baseServingSize": 4,
+  "estimatedTime": 35,
+  "instructions": [
+    "Bring a large pot of water to a boil and add a generous amount of salt.",
+    "While the water heats up, place a clean kitchen towel in a large bowl or on a cutting board. Trim and grate 2 lbs of zucchini or summer squash (about 4–6 medium-sized), using the large holes of a box grater directly onto the towel. Next, peel and grate 1 large shallot and 4 garlic cloves using the smaller holes of the grater into the towel as well.",
+    "Gather the ends of the towel and squeeze out the liquid from the zucchini mixture into the bowl or sink. Keep squeezing until little to no liquid remains. You should have around 2/3 cup of zucchini water—discard this.",
+    "Heat 3 tablespoons of extra-virgin olive oil in a medium Dutch oven or large skillet over medium-high heat. Add 1/4 teaspoon of crushed red pepper flakes and cook for about 30 seconds, stirring, until fragrant. Add the grated zucchini, shallot, and garlic mixture, along with 2 teaspoons of Diamond Crystal kosher salt (or 1 1/4 teaspoons of Morton kosher salt). Stir to combine and season generously with freshly ground black pepper. Cook, stirring occasionally, for 15–20 minutes until the mixture thickens, becomes jammy, and starts to stick to the bottom of the pot.",
+    "When the zucchini mixture has been cooking for 5–10 minutes, add 12 oz of long pasta (such as spaghetti, linguine, or bucatini) to the pot of boiling water. Cook the pasta until al dente, then reserve 2 cups of pasta cooking water before draining.",
+    "While the pasta cooks, juice 1 lemon into a small bowl. Grate 1/2 oz of Parmesan cheese (about 1/4 cup), or use pre-grated Parmesan. Tear or chop 1/2 cup of fresh basil or mint leaves coarsely.",
+    "Using tongs, transfer the cooked pasta to the skillet with the zucchini mixture, allowing some of the pasta water to cling to the noodles. Reduce the heat to medium-low and add 1/2 cup of the reserved pasta water and 1/2 cup of heavy cream. Stir to combine. Add the grated Parmesan and another 1/2 cup of pasta water. Continue stirring vigorously with tongs or a wooden spoon, adding more pasta water if necessary, until a creamy sauce forms that coats the pasta, about 2–3 minutes.",
+    "Remove the pan from the heat and stir in 2 tablespoons of lemon juice. Taste and adjust the seasoning with more salt, pepper, and possibly an additional tablespoon of lemon juice. Stir in most of the herbs, saving a little for garnish.",
+    "Serve the pasta topped with extra grated Parmesan and the remaining herbs. Enjoy!"
+  ],
+  "ingredients": [
+    {
+      "name": "Zucchini",
+      "quantity": 2,
+      "unit": "lb",
+      "notes": "about 4-6 zucchinis or summer squash"
+    },
+    {
+      "name": "Shallot",
+      "quantity": 1,
+      "unit": "large shallot",
+      "notes": "or 1/2 small onion"
+    },
+    {
+      "name": "Garlic",
+      "quantity": 4,
+      "unit": "large cloves"
+    },
+    {
+      "name": "Olive oil",
+      "quantity": 3,
+      "unit": "tablespoon"
+    },
+    {
+      "name": "Crushed red pepper flakes",
+      "quantity": 0.25,
+      "unit": "teaspoon"
+    },
+    {
+      "name": "Ground black pepper",
+      "quantity": 1,
+      "unit": "teaspoon",
+      "notes": "add to taste"
+    },
+    {
+      "name": "Spaghetti",
+      "quantity": 12,
+      "unit": "ounce",
+      "notes": "or other pasta"
+    },
+    {
+      "name": "Parmesan cheese",
+      "quantity": 0.5,
+      "unit": "ounce"
+    },
+    {
+      "name": "Lemon",
+      "quantity": 1,
+      "unit": "lemon"
+    },
+    {
+      "name": "Basil leaves",
+      "quantity": 0.5,
+      "unit": "cup",
+      "notes": "lightly pack"
+    },
+    {
+      "name": "Heavy cream",
+      "quantity": 0.5,
+      "unit": "cup"
+    }
+  ]
+}
