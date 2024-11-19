@@ -12,7 +12,6 @@ import { routeTree } from './routeTree.gen';
 // Create a new router instance
 const router = createRouter({
   routeTree,
-  basepath: import.meta.env.DEV ? '/' : '/react-vite-gh-pages/',
 });
 
 // Register the router instance for type safety
