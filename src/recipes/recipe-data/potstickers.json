@@ -1,0 +1,90 @@
+{
+  "name": "Potstickers",
+  "dateAdded": "2024-11-20T04:55:32.276Z",
+  "description": "These potstickers are a delicious and easy appetizer or meal. I usually make a lot and then freeze them for later.",
+  "cuisine": ["Chinese"],
+  "dish": ["Entree"],
+  "baseServingSize": 4,
+  "estimatedTime": 60,
+  "instructions": [
+    "In a bowl, mix together the meat, cabbage, ginger, garlic, scallion whites, and 2 tablespoons of soy sauce with ¼ cup of water. Lay a dumpling wrapper on a clean, dry surface. Using your finger or a brush, lightly coat half of the wrapper’s edge with egg wash. Place about a rounded teaspoon of the filling in the center, then fold the wrapper over and press the edges together to seal. Be careful not to overfill. Arrange the dumplings on a plate, covering them with plastic wrap if you plan to refrigerate for a few hours or freeze them (for up to two weeks).",
+    "Heat about 2 tablespoons of oil in a large nonstick skillet over medium-high heat. After a minute, add the dumplings one by one. They can touch but should lie flat in a single layer. Cook for around 2 minutes, or until the bottoms are lightly browned and the oil is mostly absorbed. Pour ¼ cup of water into the pan for every dozen dumplings and cover. Reduce the heat to medium and simmer for about 3 minutes.",
+    "For the dipping sauce, mix together the remaining soy sauce, the green parts of the scallions, and vinegar.",
+    "Uncover the dumplings, increase the heat to medium-high, and cook for another 1 to 2 minutes until the bottoms are dark brown and crispy, and the water has evaporated. (Add more oil if needed.) Serve hot with the dipping sauce."
+  ],
+  "ingredients": [
+    {
+      "name": "Meat",
+      "quantity": 0.75,
+      "unit": "lb",
+      "notes": "you can use ground pork/beef, minced mushroom, or even a combo of both"
+    },
+    {
+      "name": "Cabbage",
+      "quantity": 1,
+      "unit": "cup",
+      "preparation": "minced"
+    },
+    {
+      "name": "Ginger",
+      "quantity": 2,
+      "unit": "tablespoon",
+      "preparation": "minced"
+    },
+    {
+      "name": "Garlic",
+      "quantity": 1,
+      "unit": "tablespoon",
+      "preparation": "minced"
+    },
+    {
+      "name": "Scallion",
+      "quantity": 6,
+      "unit": "scallion",
+      "preparation": "white and green parts separated and minced"
+    },
+    {
+      "name": "Soy sauce",
+      "quantity": 0.5,
+      "unit": "cup"
+    },
+    {
+      "name": "Dumpling wrappers",
+      "quantity": 48,
+      "unit": "wrapper"
+    },
+    {
+      "name": "Egg",
+      "quantity": 1,
+      "unit": "egg",
+      "preparation": "beaten in a small bowl"
+    },
+    {
+      "name": "Sesame oil",
+      "quantity": 4,
+      "unit": "tablespoon",
+      "notes": "can also use vegetable oil or peanut oil"
+    },
+    {
+      "name": "Dipping sauce",
+      "ingredients": [
+        {
+          "name": "Soy sauce",
+          "quantity": 2,
+          "unit": "tablespoon"
+        },
+        {
+          "name": "Green Scallion",
+          "quantity": 6,
+          "unit": "scallion",
+          "notes": "(these are the scallions from above)"
+        },
+        {
+          "name": "Rice vinegar",
+          "quantity": 0.25,
+          "unit": "cup"
+        }
+      ]
+    }
+  ]
+}

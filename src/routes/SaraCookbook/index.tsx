@@ -20,7 +20,15 @@ function RouteComponent() {
     (recipe) =>
       DateTime.fromISO(recipe.dateAdded) <= DateTime.now() ||
       DateTime.fromISO(recipe.dateAdded) >= DateTime.now().minus({ days: 7 }),
-  ).slice(0, 5);
+  )
+    .slice(0, 5)
+    .sort((a, b) => {
+      const keyA = new Date(a.dateAdded);
+      const keyB = new Date(b.dateAdded);
+      if (keyA > keyB) return -1;
+      if (keyA < keyB) return 1;
+      return 0;
+    });
 
   return (
     <>
