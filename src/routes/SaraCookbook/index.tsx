@@ -79,6 +79,9 @@ const CarouselCard = ({ name, description, onClick }: CarouselCardProps) => {
       radius="md"
       onClick={onClick}
       sx={{
+        ':hover': {
+          cursor: 'pointer',
+        },
         height: '200px',
         backgroundColor: 'rgba(34, 139, 230, 0.1)',
         display: 'flex',
