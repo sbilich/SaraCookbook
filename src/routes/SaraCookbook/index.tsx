@@ -1,4 +1,4 @@
-import { Alert, Title, useMantineTheme } from '@mantine/core';
+import { Alert, Box, Title, useMantineTheme } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { createFileRoute } from '@tanstack/react-router';
 import { DateTime } from 'luxon';
@@ -37,7 +37,16 @@ function RouteComponent() {
       <Title order={4} sx={{ paddingTop: 20 }}>
         Check out the newest recipes!
       </Title>
-      <RecipeCarousel recipes={recipes} isMobile={!!isMobile} />
+      <Box
+        sx={{
+          // backgroundColor: '#e5e7e9',
+          backgroundColor: 'rgba(34, 139, 230, 0.1)',
+          padding: 20,
+          marginTop: 10,
+        }}
+      >
+        <RecipeCarousel recipes={recipes} isMobile={!!isMobile} />
+      </Box>
     </>
   );
 }

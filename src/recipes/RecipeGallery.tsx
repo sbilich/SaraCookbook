@@ -15,6 +15,7 @@ export const RecipeGallery = ({
   dishType,
 }: RecipeGalleryProps) => {
   const { navigate } = useRouter();
+
   const recipes = fetchRecipes(dishType, cuisineType);
   return (
     <div>

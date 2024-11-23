@@ -1,7 +1,7 @@
 import { Carousel } from '@mantine/carousel';
-import { Paper, Text, Title } from '@mantine/core';
 import { useRouter } from '@tanstack/react-router';
 import { RecipeType } from '../../recipes/types';
+import { RecipeCard } from './RecipeCard';
 
 interface RecipeCarouselProps {
   recipes: RecipeType[];
@@ -17,19 +17,25 @@ export const RecipeCarousel = ({ recipes, isMobile }: RecipeCarouselProps) => {
       slideGap={{ base: 2, sm: 'xl' }}
       align="start"
       sx={{
-        paddingTop: 10,
         '.mantine-Carousel-control': {
           backgroundColor: 'white',
           border: 'black 1px solid',
+          transition: 'opacity 150ms ease',
+          opacity: 0,
+        },
+        ':hover .mantine-Carousel-control': {
+          opacity: 1,
         },
       }}
       slidesToScroll={isMobile ? 1 : 2}
     >
       {recipes.map((recipe) => (
         <Carousel.Slide key={recipe.name}>
-          <RecipeCarouselCard
+          <RecipeCard
             name={recipe.name}
             description={recipe.description}
+            estimatedTime={recipe.estimatedTime}
+            cuisine={recipe.cuisine}
             onClick={() =>
               navigate({
                 to: `/SaraCookbook/recipe-viewer/$recipeName`,
@@ -42,54 +48,5 @@ export const RecipeCarousel = ({ recipes, isMobile }: RecipeCarouselProps) => {
         </Carousel.Slide>
       ))}
     </Carousel>
-  );
-};
-
-interface CarouselCardProps {
-  name: string;
-  description: string;
-  onClick: () => void;
-}
-
-const RecipeCarouselCard = ({
-  name,
-  description,
-  onClick,
-}: CarouselCardProps) => {
-  return (
-    <Paper
-      shadow={'sm'}
-      p="xl"
-      radius="md"
-      onClick={onClick}
-      sx={{
-        ':hover': {
-          cursor: 'pointer',
-        },
-        height: '200px',
-        backgroundColor: 'rgba(34, 139, 230, 0.1)',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-      }}
-    >
-      <Title
-        order={3}
-        sx={{
-          fontFamily: 'Greycliff CF, sans-serif',
-          fontWeight: 900,
-          color: 'black',
-          lineHeight: 1.2,
-          fontSize: '14px',
-        }}
-      >
-        {name}
-      </Title>
-      <Text>
-        {description.length > 100
-          ? `${description.substring(0, 100)}...`
-          : description}
-      </Text>
-    </Paper>
   );
 };
