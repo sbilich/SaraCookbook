@@ -1,4 +1,5 @@
 import { Card, Text } from '@mantine/core';
+import { minutesToTimeLabel } from '../../utils/lang';
 
 interface RecipeCardProps {
   name: string;
@@ -18,7 +19,7 @@ export const RecipeCard = ({
   onClick,
 }: RecipeCardProps) => {
   const stats = [
-    { title: 'Est. Time', value: estimatedTime },
+    { title: 'Est. Time', value: minutesToTimeLabel(estimatedTime) },
     { title: 'Cuisine', value: cuisine.join(', ') },
   ];
   const items = stats.map((stat) => (
