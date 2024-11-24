@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-const DishEnum = z.enum([
+export const DishEnum = z.enum([
   'Entree',
   'Dessert',
   'Drink',
@@ -10,7 +10,7 @@ const DishEnum = z.enum([
 ]);
 export type DishType = z.infer<typeof DishEnum>;
 
-const CuisineEnum = z.enum([
+export const CuisineEnum = z.enum([
   'Americana',
   'Chinese',
   'Italian',

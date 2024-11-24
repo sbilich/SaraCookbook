@@ -5,6 +5,7 @@ interface RecipeCardProps {
   description: string;
   estimatedTime: number;
   cuisine: string[];
+  className?: string;
   onClick: () => void;
 }
 
@@ -13,6 +14,7 @@ export const RecipeCard = ({
   description,
   estimatedTime,
   cuisine,
+  className,
   onClick,
 }: RecipeCardProps) => {
   const stats = [
@@ -32,6 +34,7 @@ export const RecipeCard = ({
 
   return (
     <Card
+      className={className}
       onClick={onClick}
       withBorder
       shadow="xs"

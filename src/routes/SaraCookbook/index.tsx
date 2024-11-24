@@ -39,7 +39,6 @@ function RouteComponent() {
       </Title>
       <Box
         sx={{
-          // backgroundColor: '#e5e7e9',
           backgroundColor: 'rgba(34, 139, 230, 0.1)',
           padding: 20,
           marginTop: 10,
